@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>HomePage</title>
+    <link href="~/Registration.css" rel="stylesheet" />
+    <style>
+        h3 {
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+    </style>
+</head>
+<body class="background">
+    <!-- First Container -->
+    <div class="container-fluid bg-1 text-center">
+        <h3 class="margin">Who Am I?</h3>
+        <img src="~/Images/pic.jpg" class="img-responsive img-thumbnail margin" style="display:inline" alt="me" width="250" height="250">
+        <h3>I'm an ASP.NET Web Developer</h3>
+    </div>
+    <ul class="pager navbar-fixed-bottom">
+        <li><a href="@Url.Action("About", "Home")">Next</a></li>
+    </ul>
+</body>
+</html>

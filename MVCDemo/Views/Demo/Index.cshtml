@@ -1,0 +1,32 @@
+﻿@model IEnumerable< MVCDemo.Models.Registration>
+
+@using MVCDemo.Models;
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <hr />
+        <h4>Registration Users</h4>
+        <hr />
+        <ul class="list-group">
+            @foreach (Registration reg in @Model)
+            {
+                <li class="list-group-item">
+                    @Html.ActionLink(reg.Firstname, "Details1", new { id = reg.ID });
+                </li>
+            }
+        </ul>
+    </div>
+</body>
+</html>

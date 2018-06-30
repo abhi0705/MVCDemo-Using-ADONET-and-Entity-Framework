@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link href="~/Registration.css" rel="stylesheet" />
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a class="navbar-brand" href="@Url.Action("Home", "Home")">Home</a></li>
+                    <li><a class="navbar-brand" href="@Url.Action("About", "Home")">My Projects</a></li>
+                    <li><a class="navbar-brand" href="@Url.Action("Contact", "Home")">Contact</a></li>
+                    <li><a class="navbar-brand" href="@Url.Action("Login", "Demo")">Login</a></li>
+                    <li><a class="navbar-brand" href="@Url.Action("Create", "Demo")">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+
+    <footer class="footer navbar-fixed-bottom">
+        <p>&copy; @DateTime.Now.Year My ASP.NET MVC Application</p>
+    </footer>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
+
+@* OLD DESIGN *@
+@*<div class="navbar navbar-fixed-top navbar-inverse-css row1">*@
+@*<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>*@
+@*<h1 class="Yugiohlogo"><span class="y">Y</span><span class="u">u</span><span class="g">g</span><span class="y">i</span><span class="u">o</span><span class="g">h</span> </h1>*@
+@*   @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+@*</div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                </ul>
+            </div>
+        </div>
+    </div>*@

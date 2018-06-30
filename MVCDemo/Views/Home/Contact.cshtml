@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<html>
+<head>
+    <title>HomePage</title>
+    <link href="~/Registration.css" rel="stylesheet" />
+    <style>
+        h2 {
+            text-shadow: 0 0 3px #FF0000;
+        }
+    </style>
+</head>
+<body class="background">
+    <div>
+        <!-- First Container -->
+        <div class="container-fluid bg-1 text-left center-block">
+            <h2 class="margin">By Phone?</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="~/Images/phone.png" class="img-responsive img-thumbnail contactlogo col-sm-3" style="display:inline" alt="phone" width="50" height="50">
+                    <h2 class="col-sm-6">832-670-9689</h2>
+                </div>
+                <div class="co-sm-12">
+                    <img src="~/Images/Iron_Man_Call_Me.gif" class="img-responsive img-thumbnail contactlogo" style="display:inline" alt="phone" width="200" height="200">
+                </div>
+            </div>
+        </div>
+        <!-- Second Container -->
+        <div class="container-fluid bg-1 text-left center-block">
+            <h2 class="margin">By Mail?</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="~/Images/email.png" class="img-responsive img-thumbnail contactlogo col-sm-3" style="display:inline" alt="phone" width="50" height="50">
+                    <h2 class="col-sm-6">aksabhijeet98@gmail.com</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Thrid Container -->
+        <div class="container-fluid bg-1 text-left center-block">
+            <h2 class="margin">Linked In?</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="~/Images/linked.png" class="img-responsive img-thumbnail contactlogo col-sm-3" style="display:inline" alt="phone" width="50" height="50">
+                    <h2 class="col-sm-6"><a href="https://www.linkedin.com/in/abhijeet-singh07/">Click for LinkedIn</a></h2>
+                </div>
+            </div>
+        </div>
+        <ul class="pager navbar-fixed-bottom">
+            <li><a href="@Url.Action("About", "Home")">Previous</a></li>
+        </ul>
+    </div>
+</body>
+</html>

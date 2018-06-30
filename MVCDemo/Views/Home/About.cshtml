@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "My Projects Examples";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Projects Examples</title>
+    <style>
+        div {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        h3 {
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+    </style>
+</head>
+<body class="background">
+    <!-- First Container (Grid) -->
+    <div class="container-fluid bg-3 text-center">
+        <h3 class="margin">My Projects?</h3><br>
+        <div class="row">
+            <div id="rcorners2" class="col-sm-4">
+                <p>
+                    Working on Creating a Login and Registration Webpages with complete server side
+                    validation and also creating a webapi using mvc with the help of Entity Frame work.
+                    Designed it using html5 css bootstrap template.Also used this design to further in
+                    my portfolio which you are viewing it right now I have used MVC5 in this project
+                    with Razor.cshtml coding.
+                </p>
+                <p>
+                    <a href="https://www.youtube.com/watch?v=l_N72YsjGvE&t=24s">Click here to check the video</a>
+                </p>
+                <img src="~/Images/Capture.PNG" class="img-responsive margin" style="width:100%" alt="Image">
+            </div>
+            <div id="rcorners2" class="col-sm-4">
+                <p>
+                    Working on Creating a Login and Registration Webpages with client side validation
+                    with the help of jquery and angular and also using the created webapi to transfer
+                    data from front-end to Sql Server database using angular jquery and also used
+                    countries Webservices which is asmx files to populate country to dropdown list
+                    with server side coding.
+                </p>
+                <p>
+                    <a href="https://www.youtube.com/watch?v=x61lcpeKUKQ&t=5s">Click here to check the video</a>
+                </p>
+                <img src="~/Images/Capture1.PNG" class="img-responsive margin" style="width:100%" alt="Image">
+            </div>
+            <div id="rcorners2" class="col-sm-4">
+                <p>
+                    This project is based on an online shopping portal when you can buy and sell the products.
+                    One can search for the products based on the filters or without filters and add to their
+                    cart.My work was on registration page with JSF, Prime Faces JavaScript, AngularJS
+                    and on database in this project like database connectivity using JDBC for login,
+                    registration and shopping cart.
+                </p>
+                <p>
+                    <a href="https://www.youtube.com/watch?v=ampNnEGhQwc">Click here to check the video</a>
+                </p>
+                <img src="~/Images/Capture2.PNG" class="img-responsive margin" style="width:100%" alt="Image">
+            </div>
+        </div>
+    </div>
+    <ul class="pager navbar-fixed-bottom">
+        <li><a href="@Url.Action("Home", "Home")">Previous</a></li>
+        <li><a href="@Url.Action("Contact", "Home")">Next</a></li>
+    </ul>
+</body>
+</html>
